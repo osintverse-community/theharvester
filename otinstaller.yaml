@@ -26,7 +26,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/theharvester@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/theharvester@sha256:effc6de905e7267dd71ea7a1992ab0609e5889c5c5d6542836d666d4c1335330
   platforms: [linux/amd64, linux/arm64]
   command: ["theHarvester", "-d", "{domain}", "-b", "{sources}", "-l", "200"]
   output_format: text
