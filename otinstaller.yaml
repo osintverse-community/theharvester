@@ -3,7 +3,7 @@
 schema: 1
 name: theharvester
 namespace: osintverse-community
-version: 4.11.2
+version: 4.11.3
 summary: "Gathers emails, subdomains, hosts and IPs for a domain from public search engines and datasets"
 readme: README.md
 license: GPL-2.0
@@ -26,7 +26,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/theharvester@sha256:cf2e9640eb0b28d4b9d63cc272dc305330e0bfbb91aad2cada2b203e260ab300
+  image: ghcr.io/osintverse-community/theharvester@sha256:e639e377198d589be255375bb59c0b4aee1c3960dbf2d89450a0f8c11e864e4c
   platforms: [linux/amd64, linux/arm64]
   command: ["theHarvester", "-d", "{domain}", "-b", "{sources}", "-l", "200"]
   output_format: text
